@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eisenhower Matrix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quadrant important urgent">
+        <h2>🔥 Do First</h2>
+        <ul id="important-urgent"></ul>
+        <input
+          type="text"
+          id="important-urgent-input"
+          placeholder="Add Task (Important & Urgent)"
+        />
+        <button onclick="addTask('important-urgent')">Add</button>
+      </div>
+      <div class="quadrant important not-urgent">
+        <h2>📅 Schedule</h2>
+        <ul id="important-not-urgent"></ul>
+        <input
+          type="text"
+          id="important-not-urgent-input"
+          placeholder="Add Task (Important & Not Urgent)"
+        />
+        <button onclick="addTask('important-not-urgent')">Add</button>
+      </div>
+      <div class="quadrant not-important urgent">
+        <h2>👥 Delegate</h2>
+        <ul id="not-important-urgent"></ul>
+        <input
+          type="text"
+          id="not-important-urgent-input"
+          placeholder="Add Task (Not Important & Urgent)"
+        />
+        <button onclick="addTask('not-important-urgent')">Add</button>
+      </div>
+      <div class="quadrant not-important not-urgent">
+        <h2>🗑️ Eliminate</h2>
+        <ul id="not-important-not-urgent"></ul>
+        <input
+          type="text"
+          id="not-important-not-urgent-input"
+          placeholder="Add Task (Not Important & Not Urgent)"
+        />
+        <button onclick="addTask('not-important-not-urgent')">Add</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
